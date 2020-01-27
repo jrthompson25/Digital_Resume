@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Professional Website:Education">
+	  <meta name="keywords" content="Jason Thompson, professional">
+    <meta charset="UTF-8"/>
+    <title>Education</title>
+    <!-- Link to external CSS styles page -->
+	  <link href="flex_grid_&_styles.css" type="text/css" rel="stylesheet"/>
+	  <!-- CSS Styles for this page only -->
+	  <style>
+      @media(min-width: 768px) {
+        .container-2 {
+          display: flex; 
+          flex-direction: row;
+        } 
+	    }   
+      .container-2 div {
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .box-4 {
+        flex: 4;
+      }
+      .box-5 {
+        flex: 4;
+	    }
+      img#degree_cert {
+        margin: 30px auto 30px 10px;
+        display: none;
+	    }
+	  </style> 
+  </head>
+  <body>
+  <!-- Top Banner with Menu and Contact Buttons-->
+    <div class="container-1">
+      <div class="box-1">
+        <img id="menu_button" src="images/button.png" alt="Menu button" title="Menu button">
+      </div>
+      <div class="box-2">
+        <a href="Introduction.html"><h1>Jason Thompson</h1>
+        <h3>Front-End Developer</h3></a>
+      </div>
+      <!-- Contact Links -->
+      <div class="box-3">
+        <a href="tel:+1-931-607-5620"><img id="button-phone" src="images/phone_1055012_small.png" alt="Call Jason" title="Call Jason"></a>
+        <a href="mailto:jrthompson35@outlook.com"><img id="button-email" src="images/email_icon_small.png" alt="Email Jason" title="Email Jason"></a>
+        <a href="https://www.linkedin.com/in/jason-thompson-3788a47b" target="_blank"><img id="button-linkedIn" src="images/LI-In-Bug_small.png" alt="LinkedIn Profile" title="LinkedIn Profile"></a>
+      </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav id="menu">
+      <div id="dismiss">X</div>
+        <ul>
+          <li><a href="Introduction.html">Introduction</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Professional_Advancement.html">Professional Advancement</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+        </ul>   
+    </nav>
+    <div class="container-2">
+      <div class="box-4">
+	      <h2>Education</h2>
+	      <h3 id="MTSU">Middle Tennessee State University - Murfreesboro, TN</h3>
+	      <p class="para3"><span class="first-letter">I</span>earned my Bachelor's Degree from <a href="http://www.MTSU.edu" target="_blank">MTSU</a>. It was there that I completed courses in Management, Strategic Management, Accounting, Finance, and many other courses to fulfill the requirements of my Business Administration minor. I also completed courses in programming languages such as C#.Net, HTML, CSS, Visual Basic, ASP.Net and SQL. These courses were for fulfilling the requirements of my major in Computer Information Systems. In addition to learning programming languages, I worked in-depth with programs such as Excel, Access, Vizio, Tableau, Oracle SQL Tools, and with add-ins for Excel such as Power BI and Power Pivot.</p>
+      </div>
+      <div class="box-5">
+        <img id="degree_cert" src="images/JasonThompson_DegCert.jpg" alt="Degree Certificate" title="Degree Certificate" width="600" height="450">
+      </div>
+    </div>	
+    <!-- Links to external jQuery pages -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="animations.js"></script>
+    <!-- jQuery animations for this page only -->
+    <script>
+  	  $("img#degree_cert").fadeIn(4000);
+    </script>
+  </body>
+</html>

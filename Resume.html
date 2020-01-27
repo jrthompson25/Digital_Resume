@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Professional Website: Resume">
+	  <meta name="keywords" content="Jason Thompson, professional">
+    <meta charset="utf-8">
+    <title>Resume</title>
+    <!-- Link to external CSS styles page -->
+	  <link href="flex_grid_&_styles.css" type="text/css" rel="stylesheet"/>
+	  <!-- CSS Styles for this page only -->
+	  <style>
+      @media(min-width: 768px) {
+        .container-2 {
+        display: flex; 
+        flex-direction: row;
+        }
+      }
+      #page1 {
+        margin-left: 50px;
+        margin-right: 40px;
+        margin-bottom: 10px;
+        display: none;
+      }
+      #page2 {
+        margin-left: 50px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        display: none;
+      }
+      .container-2 div {
+        padding: 10px;
+        margin-top: 10px;
+      }
+      .box-4 {
+        flex: 2;
+      }
+      .box-5 {
+        flex: 10;
+      }
+      .box-6 {
+        flex: 2;
+      } 
+	  </style>
+  </head>
+  <body>
+   <!-- Top Banner with Menu and Contact Buttons-->
+    <div class="container-1">
+      <div class="box-1">
+        <img id="menu_button" src="images/button.png" alt="Menu button" title="Menu button">
+      </div>
+      <div class="box-2">
+        <a href="Introduction.html"><h1>Jason Thompson</h1>
+        <h3>Front-End Developer</h3></a>
+      </div>
+      <!-- Contact Links -->
+      <div class="box-3">
+        <a href="tel:+1-931-607-5620"><img id="button-phone" src="images/phone_1055012_small.png" alt="Call Jason" title="Call Jason"></a>
+        <a href="mailto:jrthompson35@outlook.com"><img id="button-email" src="images/email_icon_small.png" alt="Email Jason" title="Email Jason"></a>
+        <a href="https://www.linkedin.com/in/jason-thompson-3788a47b" target="_blank"><img id="button-linkedIn" src="images/LI-In-Bug_small.png" alt="LinkedIn Profile" title="LinkedIn Profile"></a>
+      </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav id="menu">
+      <div id="dismiss">X</div>
+        <ul>
+          <li><a href="Introduction.html">Introduction</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Professional_Advancement.html">Professional Advancement</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+        </ul>   
+    </nav>
+    <div class="container-2">
+      <div class="box-4"></div>
+      <div class="box-5">
+        <h2>Resume</h2>
+	      <p id="resume"><span class="first-letter">I</span>have dedicated this page to my resume. Below you see two images, each a page of my resume. To view an enlarged copy, click either image. Once you've arrived to the larger copies, if you'd like to download it simply right click and select <em>Save as</em>, select your file destination, and then click <em>Save</em>. In doing this with either page you will download both pages automatically. In this resume you will find my career objective, education, strengths and competencies, a link to <a href="http://www.github.com/jrthompson25" target="_blank">my GitHub page</a> and experience - inside the tech field and out.</p>
+        <a href="documents/Styled_Resume_FrontEndDev.pdf" target="_blank"><img id="page1" src="images/Resume/Styled_Resume_FrontEndDev_Page_1.png" alt="Resume: Page 1" width="375" height="550"></a>
+        <a href="documents/Styled_Resume_FrontEndDev.pdf" target="_blank"><img id="page2" src="images/Resume/Styled_Resume_FrontEndDev_Page_2.png" alt="Resume: Page 2" width="375" height="550"></a>
+      </div>
+      <div class="box-6"></div>
+	  </div>
+	  <!-- Links to external jQuery pages -->
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="animations.js"></script>
+    <!-- jQuery animations for this page only -->
+    <script>
+      $("#page1").slideDown(750);
+      $("#page2").slideDown(1250);
+    </script>
+  </body> 
+</html>

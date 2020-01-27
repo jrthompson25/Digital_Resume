@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Professional Website: Professional Advancement">
+	  <meta name="keywords" content="Jason Thompson, professional">
+    <meta charset="utf-8">
+    <title>Professional Advancement</title>
+    <!-- Link to external CSS styles page -->
+	  <link href="flex_grid_&_styles.css" type="text/css" rel="stylesheet"/>
+    <!-- CSS Styles for this page only -->
+	  <style>
+      @media(min-width: 768px) {
+        .container-2 {
+        display: flex; 
+        flex-direction: row;
+        }
+      }
+      .container-2 div {
+        margin-top: 10px;
+      }
+      .box-4 {
+        flex: 4;
+      }
+      .box-5 {
+        flex: 4;
+      }
+      img#html_cert {
+       display: none;
+       margin: 30px 10px 10px 70px;
+      }
+     img#javascript_cert {
+       display: none;
+       margin: 10px 10px 20px 70px;
+      }
+      #emphasis {
+        font-style: italic;
+      }
+	  </style>
+  </head>
+  <body>
+  <!-- Top Banner with Menu and Contact Buttons-->
+    <div class="container-1">
+      <div class="box-1">
+        <img id="menu_button" src="images/button.png" alt="Menu button" title="Menu button">
+      </div>
+      <div class="box-2">
+        <a href="Introduction.html"><h1>Jason Thompson</h1>
+        <h3>Front-End Developer</h3></a>
+      </div>
+      <!-- Contact Links -->
+      <div class="box-3">
+        <a href="tel:+1-931-607-5620"><img id="button-phone" src="images/phone_1055012_small.png" alt="Call Jason" title="Call Jason"></a>
+        <a href="mailto:jrthompson35@outlook.com"><img id="button-email" src="images/email_icon_small.png" alt="Email Jason" title="Email Jason"></a>
+        <a href="https://www.linkedin.com/in/jason-thompson-3788a47b" target="_blank"><img id="button-linkedIn" src="images/LI-In-Bug_small.png" alt="LinkedIn Profile" title="LinkedIn Profile"></a>
+      </div>
+    </div>
+  <!-- Navigation Bar -->
+    <nav id="menu">
+      <div id="dismiss">X</div>
+      <ul>
+        <li><a href="Introduction.html">Introduction</a></li>
+        <li><a href="Education.html">Education</a></li>
+        <li><a href="Professional_Advancement.html">Professional Advancement</a></li>
+        <li><a href="Projects.html">Projects</a></li>
+        <li><a href="Resume.html">Resume</a></li>
+      </ul>   
+    </nav>
+    <div class="container-2">
+      <div class="box-4">
+        <h2>Professional Advancement</h2>
+  	    <h3>Post-College Work</h3>
+        <p><span class="first-letter">S</span>ince earning my degree, I have committed myself to mastery of languages taught while in college, but also others that were not. Shown below are my certificates of completion in HTML, CSS, JavaScript, and jQuery is soon to follow. These certificates were obtained through completing two books in the <span id="emphasis">A Smarter Way to Learn</span> series, which are used as part of the course material for <a href="http://www.devmountain.com" target="_blank">DevMountain</a> - a developer bootcamp. One covers HTML & CSS and the other covers JavaScript, as you can see on the certificates themselves. These books are written in a way that increases the reader's retention of the material tremendously.</p> <p>Each chapter is a brief, but informative, explanation of each coding concept. After the reader completes each chapter, there are twenty rigorous exercises for the concept the chapter covers, totaling to 1780 exercises upon completion of each book. However, this number does not include repeating exercises for the sake of reviewing more complicated concepts, so the number of exercises I have completed is actually more. These books are not only an excellent way to learn a language, but are also a wonderful source of reference while in the middle of developing or to review. There are several languages the writer covers and to see which those are as well as reviews from more developers, you can visit his <a href="http://www.asmarterwaytolearn.com" target="_blank">website</a>.</p>
+      </div>
+      <div class="box-5">
+        <img id="html_cert" src="http://www.asmarterwaytolearn.com/htmlcss-certificate-of-completion-jason-r-thompson.jpg" alt="HTML & CSS Certificate of Completion" title="HTML & CSS Certificate of Completion" width="350" height="300"><br>
+        <img id="javascript_cert" src="http://www.asmarterwaytolearn.com/javascript-certificate-of-completion-jason-r-thompson.jpg" alt="JavaScript Certificate of Completion" title="JavaScript Certificate of Completion" width="350" height="300">
+      </div>
+    </div>
+    <!-- Links to external jQuery pages -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="animations.js"></script>
+    <!-- jQuery animations for this page only -->
+    <script>
+      $("img#html_cert").slideDown(750);
+      $("img#javascript_cert").slideDown(1250);
+    </script> 
+  </body>
+</html>

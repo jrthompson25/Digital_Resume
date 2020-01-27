@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Professional Website: Introduction">
+    <meta name="keywords" content="Jason Thompson, professional">
+    <meta charset="utf-8">
+    <title>Introduction</title>
+    <!-- Link to external CSS styles page -->
+    <link rel="stylesheet" type="text/css" href="flex_grid_&_styles.css">
+    <!-- CSS styles for this page only -->
+    <style>
+      @media(min-width: 768px) {
+        .container-2 {
+        display: flex; 
+        flex-direction: row; 
+		  }
+		}
+		.container-2 div {
+        padding: 10px;
+        margin-top: 10px;
+        }
+      .box-4 {
+        flex: 4;	
+	  }
+      .box-5 {
+        flex: 4;
+      }
+      .box-5 img {
+        display: block;
+        margin: 30px 0 30px 70px;
+      }
+    </style>
+  </head>
+  <body>
+  <!-- Top Banner with Menu and Contact Buttons-->
+    <div class="container-1">
+      <div class="box-1">
+        <img id="menu_button" src="images/button.png" alt="Menu button" title="Menu button">
+      </div>
+      <div class="box-2">
+        <a href="Introduction.html"><h1>Jason Thompson</h1>
+        <h3>Front-End Developer</h3></a>
+      </div>
+      <!-- Contact Links -->
+      <div class="box-3">
+        <a href="tel:+1-931-607-5620"><img id="button-phone" src="images/phone_1055012_small.png" alt="Call Jason" title="Call Jason"></a>
+        <a href="mailto:jrthompson35@outlook.com"><img id="button-email" src="images/email_icon_small.png" alt="Email Jason" title="Email Jason"></a>
+        <a href="https://www.linkedin.com/in/jason-thompson-3788a47b" target="_blank"><img id="button-linkedIn" src="images/LI-In-Bug_small.png" alt="LinkedIn Profile" title="LinkedIn Profile"></a>
+      </div>
+    </div>
+    <!-- Navigation Bar -->
+    <nav id="menu">
+      <div id="dismiss">X</div>
+        <ul>
+          <li><a href="Introduction.html">Introduction</a></li>
+          <li><a href="Education.html">Education</a></li>
+          <li><a href="Professional_Advancement.html">Professional    Advancement</a></li>
+          <li><a href="Projects.html">Projects</a></li>
+          <li><a href="Resume.html">Resume</a></li>
+        </ul>   
+    </nav>
+    <div class="container-2">
+      <div class="box-4">
+        <h2>Welcome</h2>
+          <h3>Introduction</h3>
+            <p id="intro"><span class="first-letter">H</span>ello, My name is Jason Thompson. I am the creator of this website. Here you will be introduced to my education and professional development. The sole purpose of this website is to showcase my skills as a Front-End Developer utilizing languages such as HTML, CSS, JavaScript, and jQuery. It has been created strictly by coding from scratch; there has been no use of a CMS such as WordPress, Drupal, or Joomla and there were no themes downloaded online or anything such as that.</p>
+            <p>While it was created in Dreamweaver for part of the time, no drag-and-drop design was used. In short, I have only used coding concepts I have learned through attaining my degree and my self-taught study of these languages, nothing more. Please take a few moments to browse and observe by using the navigation bar which reveals itself when clicking on the menu bars in the top-left corner. If you wish to contact me, you can do so by clicking the buttons in the top-right corner. Thank you for visiting!</p>
+      </div>
+      <div class="box-5">
+        <img id="prof_img" src="images/ProfImg2(400x500).jpg" alt="Profile Image: Jason Thompson" width="300" height="400" title="Profile Image: Jason Thompson"/>
+      </div>
+	 </div>
+    <!-- Links to external jQuery pages -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="animations.js"></script>
+  </body>
+</html>
